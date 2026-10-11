@@ -590,6 +590,15 @@ select.sc-input{cursor:pointer;appearance:none;background-image:url("data:image/
 .og-all{background:none;border:none;color:var(--text-accent);font-size:12.5px;font-weight:700;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
 .og-all:hover{color:var(--accent-hover)}
 @media(max-width:600px){.grp-title{font-size:20px}.grp-open{padding:9px 13px}.search-input{font-size:16px}}
+
+.sheet-page{max-width:1100px;margin:0 auto;padding:16px}
+.sheet-head{margin-bottom:14px}
+.sheet-title{font-size:22px;font-weight:800;margin:0 0 4px;color:var(--text-primary)}
+.sheet-sub{font-size:14px;color:var(--text-secondary)}
+.sheet-open-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:12px 20px;border-radius:var(--radius-md);text-decoration:none;margin-bottom:14px}
+.sheet-frame-wrap{position:relative;width:100%;height:70vh;min-height:420px;border:1px solid var(--border-subtle);border-radius:var(--radius-md);overflow:hidden;background:var(--bg-card)}
+.sheet-frame{width:100%;height:100%;border:0}
+.sheet-note{margin-top:10px;font-size:13px;color:var(--text-muted)}
 </style>
 </head>
 <body>
@@ -607,7 +616,7 @@ select.sc-input{cursor:pointer;appearance:none;background-image:url("data:image/
    ============================================================ */
 var APP_DATE = "11 Oct 2026";
 var APP_UPDATED = "11 Oct 2026 · 1:21 AM";
-var APP_VERSION = "v73 · 11 Oct 2026 · 22:16";
+var APP_VERSION = "v83 · 12 Oct 2026 · 00:45";
 var OFFERS = [
   {
     "company": "Aces",
@@ -657,7 +666,7 @@ var OFFERS = [
     "id": "offer_1",
     "language": "",
     "interviewTime": "Monday to Friday · 4:00 PM – 6:00 PM",
-    "confirmMsg": "",
+    "confirmMsg": "**Hello 👋🏻**\n\nHope you’re doing great! This is **............................**, HR Recruiter at **Alpha Recruitment Agency**. 🩶\n\nYour interview with **TTC** is scheduled for:\n\n📅 **Date:** Day\n⏰ **Time:** *Time* PM – *Time* PM\n📍 **Location:** Makram Ebid, Nasr City\n\n🗺️ **Google Maps:** (ضيف لينك جوجل مابس هنا)\n\n**Just let me know that you’ll be able to make it by replying “Confirmed 👍” 😊**\n\nAlso, please mention that you were recruited through **CoreHires Agency** and make sure to write it on the application.\n\nAnd if anything comes up or you need to reschedule, feel free to let me know.\n\n**Wishing you the very best of luck with your interview, Insh’Allah! 🤲🏻✨**",
     "agency": "CoreHires",
     "ivDays": [
       "Monday",
@@ -669,7 +678,7 @@ var OFFERS = [
     "ivSlots": [
       "4:00 PM – 6:00 PM"
     ],
-    "ivProcess": "On-site (walk-in) interview, Monday to Friday, 5:00–7:00 PM. No confirmation message for this one — tell the candidate to attend within that window.",
+    "ivProcess": "On-site (walk-in) interview, Monday to Friday, 4:00–6:00 PM. Send the candidate the confirmation message with the day & time.",
     "ivMode": "Site interview",
     "ivIcon": "🏢"
   },
@@ -725,14 +734,22 @@ var OFFERS = [
     "eligibility": "",
     "nationality": "Egyptians only",
     "maxAge": "",
-    "interviewTime": "",
-    "confirmMsg": "",
+    "interviewTime": "Monday to Friday · 2:00 PM – 7:00 PM",
+    "confirmMsg": "**Hello 👋🏻**\n\nHope you’re doing great! This is **............................**, HR Recruiter at **Alpha Recruitment Agency**. 🩶\n\nYour interview with **Cxpert** is scheduled for:\n\n📅 **Date:** Day\n⏰ **Time:** *Time* PM – *Time* PM\n📍 **Location:** Mall El Boustan, Downtown, Cairo\n\n🗺️ **Google Maps:** (ضيف لينك جوجل مابس هنا)\n\n**Just let me know that you’ll be able to make it by replying “Confirmed 👍” 😊**\n\nAlso, please mention that you were recruited through **Scale Hire** and make sure to write it on the application.\n\nAnd if anything comes up or you need to reschedule, feel free to let me know.\n\n**Wishing you the very best of luck with your interview, Insh’Allah! 🤲🏻✨**",
     "agency": "Scale Hire",
-    "ivDays": [],
-    "ivSlots": [],
-    "ivMode": "Manager calls",
-    "ivIcon": "📞",
-    "ivProcess": "The account manager calls the candidate to arrange the interview. No scheduling message needed from your side."
+    "ivDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "ivSlots": [
+      "2:00 PM – 7:00 PM"
+    ],
+    "ivMode": "Site interview",
+    "ivIcon": "🏢",
+    "ivProcess": "1- Validation VN\n2- Schedule site interview (Monday to Friday, 2:00 PM – 7:00 PM)"
   },
   {
     "company": "LTS Inbound",
@@ -1061,34 +1078,6 @@ var OFFERS = [
     "ivIcon": "🏢"
   },
   {
-    "company": "Alorica",
-    "campaign": "Customer Support Advisor – Airline (US Market)",
-    "type": "Customer Service",
-    "languageLevel": "B2 – C1",
-    "salary": "Up to 20K gross",
-    "workingHours": "Rotational | 5 days on, 2 off",
-    "branch": "Sheikh Zayed",
-    "eligibility": "Graduates, Dropouts welcome",
-    "maxAge": "40",
-    "experience": "6 months+ CS experience",
-    "status": "on hold",
-    "priority": "Standard",
-    "offerDetails": "Alorica EG is hiring\nPosition: Customer Support Advisor (English Account)\nAccount: Airline – US Market (Travel Agent)\nLocation: Sheikh Zayed\n\nRequirements:\n        •        Fluent English (B2 – C1)\n        •        Graduates, Dropouts are welcome\n        •        Maximum age: 40\nExperience in CS for at least 6 months\n\nJob Details:\n        •        5 working days / 2 days off\n        •        Rotational shifts\n        •        Medical & Social Insurance\n        •        Paid training\n        •        Transportation provided\n        •     salary up to 20k gross",
-    "facebookPost": "✈️ Alorica EG Is Hiring | Customer Support | Up to 20K Gross\n\n🇬🇧 Customer Support Advisor — English Account\n✈️ Account: Airline – US Market (Travel Agent)\n\n📍 Location: Sheikh Zayed\n💰 Salary: Up to 20,000 EGP Gross\n\n🎯 Requirements\n🇬🇧 Fluent English — B2 to C1\n🎓 Graduates & Dropouts are welcome\n📞 Minimum 6 months Customer Service experience\n🎂 Maximum age: 40\n🕒 Job Details\n📅 5 working days / 2 days off\n🔄 Rotational shifts\n🏥 Medical & social insurance\n💰 Paid training\n🚌 Transportation provided\n\n📲 Interested? Reach me on WhatsApp:\nhttps://wa.me/201110408240",
-    "note": "",
-    "id": "offer_14",
-    "language": "",
-    "nationality": "",
-    "interviewTime": "",
-    "confirmMsg": "",
-    "agency": "",
-    "ivDays": [],
-    "ivSlots": [],
-    "ivProcess": "Online interview. HR / the client contacts the candidate with the slot.",
-    "ivMode": "Online",
-    "ivIcon": "💻"
-  },
-  {
     "company": "Teleperformance English",
     "campaign": "English Account (Call Center)",
     "type": "Customer Service",
@@ -1220,41 +1209,6 @@ var OFFERS = [
     "flowNote": "بعد ما بنسجله على الـ Panel:\n• لو الـ candidate Qualified → بيكلموه خلال 3 أيام من تاريخ تسجيل البيانات على الـ Panel (مش شاملين الجمعة والسبت).\n• لو Not Qualified → مش بيكلموه."
   },
   {
-    "company": "Atain French Bilingual",
-    "campaign": "French Travel Advisor (GDS)",
-    "type": "Customer Service",
-    "language": "French + English",
-    "languageLevel": "English B2, French C1",
-    "salary": "32,000 net",
-    "workingHours": "Rotational 8 hrs | 5 on, 2 off",
-    "branch": "Maadi",
-    "eligibility": "Graduate",
-    "nationality": "Egyptians only",
-    "maxAge": "40",
-    "experience": "6+ months GDS (Amadeus/Sabre/Galileo) — mandatory",
-    "status": "on hold",
-    "priority": "Hot",
-    "offerDetails": "📢 *Job Opening: Atain French Travel Advisor (GDS exp) 🇫🇷 at ATAIN*\n\n📍 maadi\n📂 Customer Service\n💰 Net EGP 32,000 / Monthly\n👤 Gender: Both\n💂 Military: Completed\n🌍 Nationality: Egyptians Only\n🎂 Max Age: 40\n🎓 Education: Graduate\n📋 Experience: 🇫🇷 French Travel Advisor\n💰 Salary: 32,000 EGP Net\n📌 Requirements: • Minimum 6 months GDS experience — Amadeus, Sabre, Galileo, or similar\n• Previous Travel Industry experience\n• Bilingual candidates\n⚠️ GDS experience is mandatory.\n🗣️ Languages: English (B2), French (C1)\n\n🎁 Benefits:\n✅ Medical Insurance\n✅ Social Insurance\n✅ Paid Training\n\n📅 Work Schedule:\n☀️ Rotational Shift\n🕐 Shifts: Morning, Night, Overnight\n📆 Working Days: 5 working days and 2 days off\n⏰ Hours: 8 hours and 1 hr break",
-    "facebookPost": "🔥 French Travel Advisor | 32K Net 🇫🇷\n\n💰 32,000 EGP Net\n✈️ Travel Account\n📍 Maadi\n🇫🇷 French C1 + English B2\n💼 6+ Months GDS Experience — Mandatory\n🎓 Graduates | Egyptians Only\n👤 Both Genders\n🎂 Max Age: 40\n\n🕒 Rotational Shifts\n📅 5 Working Days + 2 Days OFF\n⏰ 8 Hours + 1 Hour Break\n\n🏥 Medical & Social Insurance\n🎓 Paid Training\n\n📲 Interested? Reach me on WhatsApp:\nhttps://wa.me/201110408240",
-    "note": "",
-    "id": "offer_19",
-    "interviewTime": "Monday to Friday · 11:00 AM – 4:00 PM",
-    "confirmMsg": "**Hello 👋🏻**\n\nHope you’re doing great! This is **............................**, HR Recruiter at **Alpha Recruitment Agency**. 🩶\n\nYour interview for the **French Bilingual Account at Atain** is scheduled for:\n\n📅 **Date:** Day\n⏰ **Time:** *Time* PM – *Time* PM\n📍 **Location:** 1st Floor, Vodafone Building, Maadi Technology Park, Al Lasilki, Ezbet Fahmy, Maadi, Cairo\n\n🗺️ **Google Maps:** https://maps.app.goo.gl/fG33WfEKBPR67nd37\n\n**Just let me know that you’ll be able to make it by replying “Confirmed 👍” 😊**\n\nAlso, please mention that you were recruited by **“Mosla Pioneers”** and make sure to write it on the application.\n\nAnd if anything comes up or you need to reschedule, feel free to let me know.\n\n**Wishing you the very best of luck with your interview, Insh’Allah! 🤲🏻✨**\n",
-    "agency": "Mosla Pioneers",
-    "ivDays": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "ivSlots": [
-      "11:00 AM – 4:00 PM"
-    ],
-    "ivMode": "Site interview",
-    "ivIcon": "🏢"
-  },
-  {
     "company": "Atain English",
     "campaign": "English Travel Advisor (GDS)",
     "type": "Customer Service",
@@ -1290,31 +1244,6 @@ var OFFERS = [
     "ivIcon": "🏢"
   },
   {
-    "company": "Alorica",
-    "campaign": "French Bilingual Account",
-    "type": "Customer Service",
-    "language": "French + English",
-    "languageLevel": "English B2, French B2",
-    "salary": "Up to 32,000 gross (Basic 32K)",
-    "workingHours": "Rotational shifts (night shifts OK)",
-    "branch": "Sheikh Zayed",
-    "eligibility": "Graduates & Dropouts only",
-    "nationality": "Egyptians only",
-    "maxAge": "40",
-    "experience": "",
-    "interviewTime": "Starting 12 Aug",
-    "status": "Active",
-    "priority": "Standard",
-    "offerDetails": "🔥 Alorica — French Bilingual Account (Customer Service)\n📍 Sheikh Zayed\n🗓️ Starting 12 Aug\n\n💰 Up to EGP 32,000 / month (Gross Basic Salary: EGP 32,000)\n🗣️ Languages: English (B2), French (B2)\n🎓 Education: Graduates & Dropouts only\n🌍 Egyptians only\n🔞 Max Age: 40\n🕒 Rotational shifts (OK with night shifts)\n\nBenefits:\n✅ Paid Training\n✅ Medical Insurance\n✅ Social Insurance\n🚌 Transportation Provided\n\n📌 RTS with all papers ready.",
-    "facebookPost": "📣 Now Hiring — French Bilingual Customer Service @ Alorica\n📍 Sheikh Zayed  |  🗓️ Starting 12 Aug\n\n💰 Up to 32,000 EGP / month\n🗣️ English B2 + French B2\n🎓 Grads & Dropouts welcome  |  🌍 Egyptians only  |  🔞 Max age 40\n🕒 Rotational shifts (night shifts included)\n✅ Paid training, medical & social insurance, 🚌 transportation\n\n📲 Interested? Reach me on WhatsApp:\nhttps://wa.me/201110408240",
-    "note": "RTS with all papers ready. Candidate must be OK with night / rotational shifts.",
-    "confirmMsg": "",
-    "agency": "",
-    "ivDays": [],
-    "ivSlots": [],
-    "id": "alorica-fr"
-  },
-  {
     "company": "BIS",
     "campaign": "Telesales Representative · US Campaign 🇺🇸",
     "type": "Telesales",
@@ -1333,7 +1262,7 @@ var OFFERS = [
     "offerDetails": "💼 Telesales Representative | US Campaign 🇺🇸\n\nWe are hiring Telesales Representatives for our US Campaign.\n\nRequirements:\n✅ C1 English level (Required)\n✅ Arabic speaker (Required)\n✅ Previous telesales experience is a plus\n✅ Minimum age: 20\n\nWork Schedule:\n📆 Monday to Friday\n🕒 3:00 PM – 11:00 PM (Fixed Shift)\n📅 Weekends Off (Saturday & Sunday)\n\nCompensation & Benefits:\n💰 12,000–15,000 EGP (Basic + Attractive Commissions)\n🎓 Paid probation and a bonus after passing\n📍 Location: Makram Ebeid, Nasr City\n🚫 No Transportation\n🚫 No Work From Home\n🚫 No Part-Time",
     "facebookPost": "📣 Now Hiring — Telesales Representative | US Campaign 🇺🇸 @ BIS\n\n💰 12,000–15,000 EGP (Basic + attractive commissions)\n🗣️ C1 English + Arabic speaker\n🕒 3 PM – 11 PM | Mon–Fri | Weekends off\n📍 Makram Ebeid, Nasr City\n🎓 Paid probation + bonus after passing\n\n📲 Interested? Reach me on WhatsApp:\nhttps://wa.me/201110408240",
     "note": "Advertise the salary as 12,000–15,000 EGP (Basic 12,000 + commission). Requires C1 English + Arabic speaker. Min age 20. No transport / WFH / part-time.",
-    "confirmMsg": "",
+    "confirmMsg": "**Hello 👋🏻**\n\nHope you’re doing great! This is **............................**, HR Recruiter at **Alpha Recruitment Agency**. 🩶\n\nYour interview with **BIS** is scheduled for:\n\n📅 **Date:** Day\n⏰ **Time:** *Time* PM – *Time* PM\n📍 **Location:** Makram Ebeid, Nasr City\n\n🗺️ **Google Maps:** (ضيف لينك جوجل مابس هنا)\n\n**Just let me know that you’ll be able to make it by replying “Confirmed 👍” 😊**\n\nAlso, please mention that you were recruited through **Scale Hire** and make sure to write it on the application.\n\nAnd if anything comes up or you need to reschedule, feel free to let me know.\n\n**Wishing you the very best of luck with your interview, Insh’Allah! 🤲🏻✨**",
     "agency": "Scale Hire",
     "ivDays": [
       "Monday",
@@ -1347,43 +1276,8 @@ var OFFERS = [
     ],
     "id": "us-telesales",
     "ivMode": "Site interview",
-    "ivIcon": "🏢"
-  },
-  {
-    "company": "UCC",
-    "campaign": "Call Center Agent – US Account (Debt Settlement)",
-    "type": "Telesales",
-    "languageLevel": "C1",
-    "salary": "15,000 EGP Basic + Commission per qualified transfer + Daily bonuses",
-    "workingHours": "5 PM – 2 AM (Fixed)",
-    "branch": "Zahraa El Maadi",
-    "nationality": "Egyptians & Foreigners",
-    "experience": "Debt Settlement experience required",
-    "status": "on hold",
-    "priority": "Standard",
-    "offerDetails": "Company: UCC — United Fund (U.S. Account)\nPosition: Call Center Agent — Debt Settlement\nSalary: 15,000 EGP Basic + Commission on every qualified transfer + Daily bonuses\nWorking Hours: 5 PM – 2 AM (Fixed Shift)\nLocation: Zahraa El Maadi\n\nRequirements:\n- English C1 or above\n- Debt Settlement experience is required\n- All Graduation Status [Grads, Undergrads, Dropouts, Gap years]\n- Egyptians & Foreigners\n- Max Age: 16 – 30\n\nRole:\n- Speaking with U.S. clients\n- Qualifying leads\n- Transferring qualified calls\n- Working with a supportive, professional team",
-    "facebookPost": "🔥 Call Center Agent | US Account — Debt Settlement\n\n💵 15,000 EGP Basic Salary\n➕ Commission on every qualified transfer\n🎯 Daily bonuses\n📈 High earning potential\n\n🕔 Shift: 5 PM – 2 AM\n📍 Zahraa El Maadi\n\nWhat you’ll be doing:\n• Speaking with U.S. clients\n• Qualifying leads\n• Transferring qualified calls\n• Working with a supportive, professional team\n\nWhat we’re looking for:\n🗣 English level C1 or above\n🤝 Professional attitude\n✅ Commitment and reliability\n🌟 Willingness to learn and grow\n\n📩 Ready for an online interview? Reach me on WhatsApp: https://wa.me/201110408240",
-    "note": "1- Validation VN   2- Schedule site interview",
-    "id": "ucc-debt",
-    "language": "",
-    "eligibility": "All Graduation Status [Grads, Undergrads, Dropouts, Gap years]",
-    "maxAge": "16 – 30",
-    "interviewTime": "Monday to Friday · 7:00 PM – 8:30 PM",
-    "confirmMsg": "",
-    "agency": "Scale Hire",
-    "ivDays": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "ivSlots": [
-      "7:00 PM – 8:30 PM"
-    ],
-    "ivProcess": "1- Validation VN\n2- Schedule site interview",
-    "ivMode": "Site interview",
-    "ivIcon": "🏢"
+    "ivIcon": "🏢",
+    "ivProcess": "1- Validation VN\n2- Schedule site interview (Monday to Friday, 4:30 PM – 8:30 PM)"
   },
   {
     "company": "Telephonic",
@@ -1419,6 +1313,114 @@ var OFFERS = [
     "ivProcess": "1- Validation (CV + Voice Note required)\n2- On-site interview",
     "ivMode": "Site interview",
     "ivIcon": "🏢"
+  },
+  {
+    "company": "Atain French Bilingual",
+    "campaign": "French Travel Advisor (GDS)",
+    "type": "Customer Service",
+    "languageLevel": "French C1 / English B2",
+    "salary": "32,000 net",
+    "workingHours": "Rotational 8 hrs | 5 on, 2 off",
+    "branch": "Maadi",
+    "eligibility": "Graduate",
+    "nationality": "Egyptians only",
+    "maxAge": "40",
+    "experience": "6+ months GDS (Amadeus/Sabre/Galileo) — mandatory",
+    "status": "Active",
+    "priority": "Standard",
+    "offerDetails": "📢 *Job Opening: Atain French Travel Advisor (GDS exp) 🇫🇷 at ATAIN*\n\n📍 maadi\n📂 Customer Service\n💰 Net EGP 32,000 / Monthly\n👤 Gender: Both\n💂 Military: Completed\n🌍 Nationality: Egyptians Only\n🎂 Max Age: 40\n🎓 Education: Graduate\n📋 Experience: 🇫🇷 French Travel Advisor\n💰 Salary: 32,000 EGP Net\n📌 Requirements:\n• Minimum 6 months GDS experience — Amadeus, Sabre, Galileo, or similar\n• Previous Travel Industry experience\n• Bilingual candidates\n⚠️ GDS experience is mandatory.\n🗣️ Languages: English (B2), French (C1)\n\n🎁 Benefits:\n✅ Medical Insurance\n✅ Social Insurance\n✅ Paid Training\n\n📅 Work Schedule:\n☀️ Rotational Shift\n🕐 Shifts: Morning, Night, Overnight\n📆 Working Days: 5 working days and 2 days off\n⏰ Hours: 8 hours and 1 hr break",
+    "facebookPost": "🔥 French Travel Advisor | 32K Net 🇫🇷\n\n💰 32,000 EGP Net\n✈️ Travel Account\n📍 Maadi\n🇫🇷 French C1 | 🇬🇧 English B2\n💼 6+ Months GDS Experience — Mandatory\n🎓 Graduates | Egyptians Only\n👤 Both Genders\n🎂 Max Age: 40\n\n🕒 Rotational Shifts\n📅 5 Working Days + 2 Days OFF\n⏰ 8 Hours + 1 Hour Break\n\n🏥 Medical & Social Insurance\n🎓 Paid Training\n\n📲 Interested? Reach me on WhatsApp:\nhttps://wa.me/201110408240",
+    "note": "🗂 French Account — Interview Guide (Français B2 / Anglais B1)\n\n🟣 Partie A — Entretien en ligne (Français, Microsoft Teams)\n• Le lien sera envoyé 30 minutes avant l’entretien.\n• Durée: 15–30 minutes.\nQuestions:\n1. Présentez-vous (formation / expérience).\n2. Que savez-vous du service client ?\n3. Comment gérez-vous un client en colère au téléphone ?\n4. Pourquoi voulez-vous nous rejoindre ?\n\n🔵 Partie B — Entretien téléphonique (Anglais)\n1. Introduce yourself & talk about your previous work experiences.\n2. What do you know about customer service & why do you want to join?\n3. What would you do if you faced an angry customer over the phone?\n\n🟢 Partie C — Évaluations informatiques (Français — SHL / Varient)\n1. Test de lecture (13 phrases) — lire à voix haute\n2. Test d’écoute (10 phrases) — écouter et répéter\n3. Test de frappe — https://www.typingtest.com/\n4. Questions de personnalité — https://www.shl.com/shldirect/fr/example-questions/personality-questionnaire/\n5. Compréhension orale (5 questions)\n6. Vocabulaire (5 questions) — https://www.languagelevel.com/\n7. Grammaire (5 questions) — https://www.languagelevel.com/\n8. Discussion libre — 30 sec préparation, 45 sec de parole\n9. Test de QI — https://www.practiceaptitudetests.com/sign-in\n\n🔴 Partie D — Computer Assessments (English — SHL / Varient)\n1. Reading Test (13 sentences) — https://www.britishcouncil.org/english/learn-online/englishscore\n2. Listening Test (10 sentences) — same link\n3. Typing Test — https://www.typingtest.com/\n4. Personality Questions — https://www.shl.com/shldirect/en/example-questions/personality-questionnaire/\n5. Listening Comprehension (5 sentences)\n6. Vocabulary (5 questions) — https://www.languagelevel.com/\n7. Grammar (5 questions) — https://www.languagelevel.com/\n8. Free Discussion — prepare and speak on a given topic\n9. IQ Test — https://www.practiceaptitudetests.com/sign-in",
+    "id": "atain-french-bilingual",
+    "language": "French",
+    "interviewTime": "Monday to Friday · 11:00 AM – 4:00 PM",
+    "confirmMsg": "**Hello 👋🏻**\n\nHope you’re doing great! This is **............................**, HR Recruiter at **Alpha Recruitment Agency**. 🩶\n\nYour interview for the **Atain French Bilingual Account** is scheduled for:\n\n📅 **Date:** Day\n⏰ **Time:** *Time* AM – *Time* PM\n📍 **Location:** 1st Floor, Vodafone Building, Maadi Technology Park, Al Lasilki, Ezbet Fahmy, Maadi, Cairo\n\n🗺️ **Google Maps:** https://maps.app.goo.gl/fG33WfEKBPR67nd37\n\n**Just let me know that you’ll be able to make it by replying “Confirmed 👍” 😊**\n\nAlso, please mention that you were recruited by **“Mosla Pioneers”** and make sure to write it on the application.\n\nAnd if anything comes up or you need to reschedule, feel free to let me know.\n\n**Wishing you the very best of luck with your interview, Insh’Allah! 🤲🏻✨**",
+    "agency": "Mosla Pioneers",
+    "ivDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "ivSlots": [
+      "11:00 AM – 4:00 PM"
+    ],
+    "ivProcess": "1- Validation VN\n2- Schedule site interview (Monday to Friday, 11:00 AM – 4:00 PM)",
+    "ivMode": "Site interview",
+    "ivIcon": "🏢"
+  },
+  {
+    "company": "TTEC Portuguese Sales",
+    "campaign": "Portuguese Sales Account",
+    "type": "Sales",
+    "languageLevel": "Portuguese B2+ / C1 · English B2",
+    "salary": "42,200 Gross + Commission",
+    "workingHours": "Rotational 9 hrs (incl. break) | 5 on, 2 off",
+    "branch": "Maadi",
+    "eligibility": "Graduate",
+    "nationality": "Egyptians only",
+    "maxAge": "45",
+    "experience": "Minimum 1 year of Sales",
+    "status": "Active",
+    "priority": "Standard",
+    "offerDetails": "🌟 📢 *Job Opening: TTEC Portuguese Account Sales Exp 🇵🇹 at TTEC*\n\n📍 maadi\n📂 Sales\n💰 Up to EGP 42,000 / Monthly\n👤 Gender: Both\n💂 Military: Completed\n🌍 Nationality: Egyptians Only\n🎂 Max Age: 45\n🎓 Education: Graduate\n📋 Experience: 💼 Minimum 1 year of Sales experience\n💬 Strong communication skills\n💻 Computer literacy & ability to handle systems efficiently\n\nJob Responsibilities:\n• Handle customer inquiries professionally.\n• Provide accurate information and effective solutions.\n• Ensure a high level of customer satisfaction.\n• Maintain excellent communication with customers.\n• Deliver an outstanding customer experience.\n\nWork Conditions:\n🕘 Rotational Shifts (9 hours – 24/7)\n📅 2 Rotational Days Off\n\nSalary & Benefits:\n💰 Total Gross Salary: 42,200 EGP + Commission\n🏥 Medical Insurance\n👥 Social Insurance\n🚌 Transportation Provided (Collection Points)\n🚖 Door-to-door transportation for females from 10:00 PM to 6:00 AM\n🗣️ Languages: English (B2), Portuguese (B2+)\n\n🎁 Benefits:\n✅ Medical Insurance\n✅ Social Insurance\n✅ Paid Training\n✅ Transportation provided\n\n📅 Work Schedule:\n☀️ Rotational Shift\n🕐 Shifts: Morning, Night, Overnight\n📆 Working Days: 5 working days and 2 days off\n⏰ Hours: 8 hours and 1 hr break",
+    "facebookPost": "🇵🇹 TTEC Portuguese Sales | Up to 42K Gross + Commission\n\n💰 42,200 EGP Gross + Commission\n📍 Maadi\n🗣️ Portuguese B2+/C1 | English B2\n💼 Min 1 year Sales experience\n🎓 Graduates | Egyptians Only\n👤 Both Genders\n🎂 Max Age: 45\n\n🕒 Rotational Shifts | 2 Days OFF\n🏥 Medical & Social Insurance\n🚌 Transportation Provided (door-to-door for females 10PM–6AM)\n🎓 Paid Training\n\n📲 Interested? Reach me on WhatsApp:\nhttps://wa.me/201110408240",
+    "note": "🇵🇹 CSR — Portuguese Speaker | Interview Guide (Material em Português)\n\nDescrição: O CSR atende chamadas (inbound/outbound), responde dúvidas, resolve problemas e garante a satisfação do cliente. Fluente em Português (B2+/C1) com experiência em Customer Service / Call Center.\n\n1) Perguntas de RH / Pessoais:\n• Fale sobre você.\n• Por que Customer Service? Por que a TTEC?\n• Pontos fortes e fracos.\n• Como lida com stress e clientes difíceis?\n• Como organiza tempo e prioridades?\n• Onde se vê daqui a 2–3 anos?\n\n2) Customer Service / Call Center:\n• Experiência anterior; cliente irritado; passos para resolver; garantir satisfação; caso difícil e resultado; trabalhar sob alta demanda; KPIs (AHT, CSAT, FCR, QA).\nDica: use exemplos reais, métricas, empatia e profissionalismo.\n\n3) Roleplay:\n• Cenário 1 — Cliente irritado: desculpar, escutar, tranquilizar, oferecer solução.\n• Cenário 2 — Resolução: entender, confirmar dados, solução clara, confirmar satisfação.\n• Cenário 3 — Encerramento: resumir, perguntar se precisa de mais, finalizar com educação.\nEstrutura: Saudação → Problema → Solução → Confirmação → Encerramento.\n\n4) Voice Note / Interview:\n• Duas mensagens de voz: uma em Português 🇵🇹 e uma em Inglês 🇺🇸, mínimo 2 minutos cada.\n• Fale sobre: experiência em customer service + filme/livro/hobby favorito.\nEstrutura: Introdução → Exemplo profissional → Tema pessoal → Conclusão.\n\n5) Dicas gerais: pratique pronúncia e frases de atendimento; prepare exemplos de clientes difíceis; seja calmo, educado e confiante; mostre profissionalismo e atitude positiva.",
+    "id": "ttec-portuguese-sales",
+    "language": "Portuguese",
+    "interviewTime": "Monday to Friday · 11:00 AM – 4:00 PM",
+    "confirmMsg": "**Hello 👋🏻**\n\nHope you’re doing great! This is **............................**, HR Recruiter at **Alpha Recruitment Agency**. 🩶\n\nYour interview with **TTEC Portuguese Sales** is scheduled for:\n\n📅 **Date:** Day\n⏰ **Time:** *Time* AM – *Time* PM\n👔 Dress Code: Smart-Casual\n📍 **Location:** TTEC Office, Maadi Technology Park\n\n🗺️ **Google Maps:** https://maps.app.goo.gl/HBHLJSy4XxejTmXA8?g_st=iw\n\n**Just let me know that you’ll be able to make it by replying “Confirmed 👍” 😊**\n\nAlso, please mention that you were recruited by **“Mosla Pioneers”** and make sure to write it on the application.\n\nAnd if anything comes up or you need to reschedule, feel free to let me know.\n\n**Wishing you the very best of luck with your interview, Insh’Allah! 🤲🏻✨**",
+    "agency": "Mosla Pioneers",
+    "ivDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "ivSlots": [
+      "11:00 AM – 4:00 PM"
+    ],
+    "ivProcess": "1- Validation VN\n2- Schedule site interview (Monday to Friday, 11:00 AM – 4:00 PM)",
+    "ivMode": "Site interview",
+    "ivIcon": "🏢"
+  },
+  {
+    "company": "CRYSTAL REACH",
+    "campaign": "Telesales Agent",
+    "type": "Sales",
+    "languageLevel": "B2+ / C2",
+    "salary": "15K basic + commission (from 4K, unlimited) + bonus up to 8K/month",
+    "workingHours": "Fixed shift 3:00 PM – 12:00 AM",
+    "branch": "6th of October",
+    "eligibility": "All graduation status (Grads, Undergrads, Dropouts, Gap years)",
+    "nationality": "Egyptians only",
+    "maxAge": "30",
+    "experience": "No experience needed",
+    "status": "Active",
+    "priority": "Standard",
+    "offerDetails": "📌 *CRYSTAL REACH is hiring now*\n📍 Telesales agents\n\n❣️ REQUIREMENTS\n✅ Fluent in English (B2+ up to C1)\n✅ Grads, undergrads & foreigners can apply\n\n📍 Shifts: Fixed shift (3:00 PM – 12:00 AM)\n📍 Salary: 15K basic + commission starting from 4K (unlimited commission) + bonus up to 8K / month 🤩\n📍 Transportation provided for girls back home only (door to door 🥰)\n\n📍 Location: 6th of October\n🎂 Max Age: 30\n🌍 Egyptians Only",
+    "facebookPost": "📌 CRYSTAL REACH is hiring now | Telesales Agents\n\n💰 15K Basic + Commission from 4K (unlimited) + Bonus up to 8K/month\n📍 6th of October\n🇬🇧 English B2+ / C1\n🎓 Grads, Undergrads, Dropouts & Gap years welcome\n🌍 Egyptians Only | 🎂 Max Age: 30\n❌ No experience needed\n\n🕒 Fixed Shift: 3:00 PM – 12:00 AM\n🚖 Transportation for girls back home (door to door)\n\n📲 Interested? Reach me on WhatsApp:\nhttps://wa.me/201110408240",
+    "note": "",
+    "id": "crystal-reach",
+    "language": "English",
+    "interviewTime": "Monday to Friday · 7:00 PM – 10:00 PM",
+    "confirmMsg": "**Hello 👋🏻**\n\nHope you’re doing great! This is **............................**, HR Recruiter at **Alpha Recruitment Agency**. 🩶\n\nYour interview with **CRYSTAL REACH** is scheduled for:\n\n📅 **Date:** Day\n⏰ **Time:** *Time* PM – *Time* PM\n📍 **Location:** 6th of October\n\n🗺️ **Google Maps:** (ضيف لينك جوجل مابس هنا)\n\n**Just let me know that you’ll be able to make it by replying “Confirmed 👍” 😊**\n\nAlso, please mention that you were recruited through **(اسم الـ agency)** and make sure to write it on the application.\n\nAnd if anything comes up or you need to reschedule, feel free to let me know.\n\n**Wishing you the very best of luck with your interview, Insh’Allah! 🤲🏻✨**",
+    "agency": "",
+    "ivDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "ivSlots": [
+      "7:00 PM – 10:00 PM"
+    ],
+    "ivProcess": "1- Validation VN\n2- Schedule site interview (Monday to Friday, 7:00 PM – 10:00 PM)",
+    "ivMode": "Site interview",
+    "ivIcon": "🏢"
   }
 ];
 
@@ -1429,7 +1431,9 @@ function fbCount(k){ return k==='all'?FBGROUPS.length:FBGROUPS.filter(function(g
 var state = { view:"home", search:"", chip:"all", selectedId:null, studioVar:0, matchInputs:null, matchResults:null, gSearch:"", gCat:"all", posted:{}, broken:{}, flowOffer:"" };
 var PANEL_LINK = "https://tally.so/r/aQLq6E";
 var PANEL_TRAINING_LINK = "https://tally.so/r/dWMekd";
-var IS_TL = false; /* set true for the Team-Leader build (more access) */
+var GSHEET_LINK = "https://docs.google.com/spreadsheets/d/1OTpbYvHjzGm-Hz21dmusQSDuXYHbosSSkisj481fJOA/edit?gid=1073732944#gid=1073732944";
+var GSHEET_PREVIEW = "https://docs.google.com/spreadsheets/d/1OTpbYvHjzGm-Hz21dmusQSDuXYHbosSSkisj481fJOA/preview?gid=1073732944#gid=1073732944";
+var IS_TL = true; /* set true for the Team-Leader build (more access) */
 
 
 function loadOffers(){
@@ -1510,6 +1514,7 @@ function navbar(){
       +'<button class="nav-tab'+(tab==="match"?" on":"")+'" data-nav="match">🤔 محتار ايه أنسب أوفر؟</button>'
       +'<button class="nav-tab'+(tab==="groups"?" on":"")+'" data-nav="groups">📣 Post To</button>'
       +'<button class="nav-tab'+((tab==="process"||tab==="screening")?" on":"")+'" data-nav="process">🧰 Screening & Process</button>'
+      +(IS_TL?'<button class="nav-tab'+(tab==="sheet"?" on":"")+'" data-nav="sheet">📊 Google Sheet</button>':'')
     +'</div></nav>';
 }
 
@@ -1816,6 +1821,14 @@ function renderGroupList(){
     html+=items.map(groupCard).join("");
   }
   return html;
+}
+function sheetView(){
+  if(!IS_TL) return homeView();
+  return '<div class="sheet-page">'
+    +'<div class="sheet-head"><h1 class="sheet-title">📊 Google Sheet</h1>'
+      +'<div class="sheet-sub">الشيت المشترك بتاع الفريق — افتحه في جوجل شيت عشان تعدّل.</div></div>'
+    +'<a class="sheet-open-btn" href="'+GSHEET_LINK+'" target="_blank" rel="noopener">↗ افتح الشيت في Google Sheets</a>'
+    +'</div>';
 }
 function groupsView(){
   var postedN=fbLive().filter(function(g){return state.posted[g.u];}).length;
@@ -2429,6 +2442,7 @@ function render(){
   else if(state.view==="screening") main=processFlowView();
   else if(state.view==="match") main=matchView();
   else if(state.view==="groups") main=groupsView();
+  else if(state.view==="sheet") main=sheetView();
   else if(state.view==="process") main=processFlowView();
   else main=homeView();
   document.getElementById("root").innerHTML = navbar()+'<div class="app-content">'+main+'</div>'
